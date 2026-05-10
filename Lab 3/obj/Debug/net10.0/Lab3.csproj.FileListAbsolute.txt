@@ -1,0 +1,5 @@
+E:\logs\telemetry\All shit\ASD 2\Lab 3\obj\Debug\net10.0\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+E:\logs\telemetry\All shit\ASD 2\Lab 3\obj\Debug\net10.0\Lab3.AssemblyInfoInputs.cache
+E:\logs\telemetry\All shit\ASD 2\Lab 3\obj\Debug\net10.0\Lab3.AssemblyInfo.cs
+E:\logs\telemetry\All shit\ASD 2\Lab 3\obj\Debug\net10.0\Lab3.csproj.CoreCompileInputs.cache
+E:\logs\telemetry\All shit\ASD 2\Lab 3\obj\Debug\net10.0\Lab3.sourcelink.json
