@@ -1,13 +1,13 @@
 using System;
 using System.Windows.Forms;
 using System.Drawing;
-namespace Lab4;
+namespace Lab4 {
 
 public class GraphLogic
 {
         public int n {get;} = 11;
-        public int[,]? AdjMatrixDir {get; private set;}
-        public int[,]? AdjMatrixUnDir {get; private set;}
+        public int[,]? AdjMatrixDir {get; protected set;}
+        public int[,]? AdjMatrixUnDir {get; protected set;}
         public PointF[]? vertices {get; private set;}
 
         public void GenerateMatrix(int seed)
@@ -54,4 +54,5 @@ public class GraphLogic
                 else vertices[i] = new PointF(x, y + h - (i - 9 + 1) * (h / 3));
             }
         }
+    }
 }

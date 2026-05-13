@@ -27,3 +27,4 @@ E:\All shit\ASD 2\Lab 3\obj\Debug\net10.0-windows\refint\Lab3.dll
 E:\All shit\ASD 2\Lab 3\obj\Debug\net10.0-windows\Lab3.pdb
 E:\All shit\ASD 2\Lab 3\obj\Debug\net10.0-windows\Lab3.genruntimeconfig.cache
 E:\All shit\ASD 2\Lab 3\obj\Debug\net10.0-windows\ref\Lab3.dll
+E:\All shit\ASD 2\Lab 3\obj\Debug\net10.0-windows\Lab3.sourcelink.json

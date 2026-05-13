@@ -7,11 +7,10 @@ namespace Lab3
     public class GraphForm : Form
     {
         private GraphLogic _logic;
-        private bool _Directed;
 
         public GraphForm(GraphLogic logic)
         {
-            this.Size = new Size(800, 700);
+            this.Size = new Size(1100, 700);
             this.Text = "GraphTypes";
             TabControl tabs = new TabControl();
             tabs.Dock = DockStyle.Fill;
@@ -27,7 +26,7 @@ namespace Lab3
             undirTab.Controls.Add(undirPanel);
 
             tabs.TabPages.Add(dirTab);
-            tabs.TabPages.Add(undirTab);    
+            tabs.TabPages.Add(undirTab);
             this.Controls.Add(tabs);
         }
 
@@ -90,10 +89,12 @@ namespace Lab3
         
         float dist = (float)Math.Sqrt(dx * dx + dy * dy);
         
+        float startX = p1.X + (dx / dist) * r;
+        float startY = p1.Y + (dy / dist) * r;
+
         float endX = p2.X - (dx / dist) * r;
         float endY = p2.Y - (dy / dist) * r;
-        
-        g.DrawLine(p, p1, new PointF(endX, endY));
+        g.DrawLine(p, new PointF(startX, startY), new PointF(endX, endY));
                 } 
             }
         }

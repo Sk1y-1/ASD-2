@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6AzAZ4AOuMk=",
+  "dgSpecHash": "yD2OVJmcPb8=",
   "success": true,
-  "projectFilePath": "E:\\logs\\telemetry\\All shit\\ASD 2\\Lab 4\\Lab4.csproj",
+  "projectFilePath": "E:\\All shit\\ASD 2\\Lab 4\\Lab4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\system.drawing.common\\10.0.0\\system.drawing.common.10.0.0.nupkg.sha512"
   ],
@@ -11,9 +11,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference System.Drawing.Common will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "E:\\logs\\telemetry\\All shit\\ASD 2\\Lab 4\\Lab4.csproj",
+      "projectPath": "E:\\All shit\\ASD 2\\Lab 4\\Lab4.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\logs\\telemetry\\All shit\\ASD 2\\Lab 4\\Lab4.csproj",
+      "filePath": "E:\\All shit\\ASD 2\\Lab 4\\Lab4.csproj",
       "libraryId": "System.Drawing.Common",
       "targetGraphs": [
         "net10.0-windows7.0"
