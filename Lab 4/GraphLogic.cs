@@ -5,7 +5,7 @@ namespace Lab4 {
 
 public class GraphLogic
 {
-        public int n {get;} = 11;
+        public virtual int n {get;} = 11;
         public int[,]? AdjMatrixDir {get; protected set;}
         public int[,]? AdjMatrixUnDir {get; protected set;}
         public PointF[]? vertices {get; private set;}

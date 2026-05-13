@@ -10,10 +10,12 @@ namespace Lab4
     {
     private GraphLogic _logic;
     private bool _Directed;
-public GraphPanel(GraphLogic logic, bool directed)
+    private bool _Condensation;
+public GraphPanel(GraphLogic logic, bool directed, bool Condensation = false)
             {
                 _logic = logic;
                 _Directed = directed;
+                _Condensation = Condensation;
                 this.DoubleBuffered = true; 
             }
 
@@ -46,7 +48,8 @@ public GraphPanel(GraphLogic logic, bool directed)
                 var pt = _logic.vertices![i];
                 g.FillEllipse(Brushes.White, pt.X - r, pt.Y - r, r * 2, r * 2);
                 g.DrawEllipse(Pens.Black, pt.X - r, pt.Y - r, r * 2, r * 2);
-                g.DrawString((i + 1).ToString(), this.Font, Brushes.Black, pt.X - 7, pt.Y - 7);
+                string label = _Condensation ? $"C{i + 1}" : (i + 1).ToString();
+                g.DrawString(label, this.Font, Brushes.Black, pt.X - 7, pt.Y - 7);
             }
         }
         

@@ -42,8 +42,22 @@ namespace Lab4
             changedUndirPanel.Dock = DockStyle.Fill;
             changedUndirTab.Controls.Add(changedUndirPanel);
 
+            GraphAnalyzer graphAnalyzer2 = new GraphAnalyzer(changed);
+            var components = graphAnalyzer2.GetStrongComponents();
+            int [,] condensationMatrix = graphAnalyzer2.GetCondensationMatrix();
+            CondensationGraph condensationGraph = new CondensationGraph(condensationMatrix, components.Count);
+            condensationGraph.CalculateLayout(150, 100, 450, 350);
+
+
+
+            TabPage CondensationTab = new TabPage("Condensation");
+            GraphPanel CondensationPanel = new GraphPanel(condensationGraph, true, true);
+            CondensationPanel.Dock = DockStyle.Fill;
+            CondensationTab.Controls.Add(CondensationPanel);
+
             tabs.TabPages.Add(changedDirTab);
             tabs.TabPages.Add(changedUndirTab);
+            tabs.TabPages.Add(CondensationTab);
 
             GraphAnalyzer analyzer = new GraphAnalyzer(original);
             TextBox results = new TextBox();

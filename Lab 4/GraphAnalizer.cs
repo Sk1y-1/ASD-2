@@ -87,11 +87,14 @@ public int[,] GetPaths3()
 public int[,] GetReachabilityMatrix()
 {
     int[,] D = (int[,])_graph.AdjMatrixDir!.Clone(); // D - Distance 
+    for (int i = 0; i < _graph.n; i++)
+        D[i, i] = 1; 
+
     for (int k = 0; k < _graph.n; k++)
         for (int i = 0; i < _graph.n; i++)
             for (int j = 0; j < _graph.n; j++)
-            if ( D[i, k] == 1 && D[k, j] == 1 )
-                D[i, j] = 1;
+                if ( D[i, k] == 1 && D[k, j] == 1 )
+                    D[i, j] = 1;
     return D;
 }
 
