@@ -84,6 +84,37 @@ public int[,] GetPaths3()
     return MultiplyMatrices(GetPaths2(), _graph.AdjMatrixDir!);
 }
 
+public List<string> GetPathsOfLength2()
+{
+    var paths = new List<string>();
+    
+    for (int i = 0; i < _graph.n; i++)
+        for (int j = 0; j < _graph.n; j++)
+            for (int k = 0; k < _graph.n ; k++)
+            {
+                if (_graph.AdjMatrixDir![i, k] == 1 && _graph.AdjMatrixDir![k, j] == 1)
+                    paths.Add($"{i+1} – {k+1} – {j+1}");
+            }
+    
+    return paths;
+}
+
+public List<string> GetPathsOfLength3()
+{
+    var paths = new List<string>();
+    
+    for (int i = 0; i < _graph.n; i++)
+        for (int j = 0; j < _graph.n; j++)
+            for (int k1 = 0; k1 < _graph.n; k1++)
+                for (int k2 = 0; k2< _graph.n; k2++)
+                {
+                    if (_graph.AdjMatrixDir![i, k1] == 1 && _graph.AdjMatrixDir![k1, k2] == 1 && _graph.AdjMatrixDir![k2, j] == 1)
+                        paths.Add($"{i+1} - {k1+1} - {k2+1} - {j+1}");
+                }
+    
+    return paths;
+}
+
 public int[,] GetReachabilityMatrix()
 {
     int[,] D = (int[,])_graph.AdjMatrixDir!.Clone(); // D - Distance 

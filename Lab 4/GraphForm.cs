@@ -118,6 +118,16 @@ for (int i = 0; i < changed.n; i++)
     sb.AppendLine();
 }
 
+sb.AppendLine("\nPaths of length 2:");
+var paths2 = changedAnalyzer.GetPathsOfLength2();
+foreach (var path in paths2)
+    sb.AppendLine("  " + path);
+
+sb.AppendLine("\nPaths of length 3:");
+var paths3 = changedAnalyzer.GetPathsOfLength3();
+foreach (var path in paths3)
+    sb.AppendLine("  " + path);
+
 sb.AppendLine("\nStrong connectivity matrix:");
 int[,] S = changedAnalyzer.GetStrongConnectivityMatrix();
 for (int i = 0; i < changed.n; i++)
