@@ -26,9 +26,9 @@ namespace Lab1
             if (!int.TryParse(Console.ReadLine(), out int n) || n < 1) 
             return;
 
-            Console.WriteLine($"Res 1: {Method1(1, n, x, 1, 0):F10}");
-            Console.WriteLine($"Res 2: {Method2(1, n, x, 1).Sum:F10}");
-            Console.WriteLine($"Res 3: {Method3(1, n, x, 1):F10}");
+            Console.WriteLine($"Res 1: {Method1(1, n, x, 1, 0):F10}"); // tail recursion
+            Console.WriteLine($"Res 2: {Method2(1, n, x, 1).Sum:F10}"); // recursion with struct
+            Console.WriteLine($"Res 3: {Method3(1, n, x, 1):F10}"); // standard recursion
             Console.WriteLine($"Math.Cos: {Math.Cos(x):F10}");
         }
 

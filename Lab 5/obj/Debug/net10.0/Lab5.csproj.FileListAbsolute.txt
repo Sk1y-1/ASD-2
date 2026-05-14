@@ -1,0 +1,5 @@
+E:\All shit\ASD 2\Lab 5\obj\Debug\net10.0\Lab5.GeneratedMSBuildEditorConfig.editorconfig
+E:\All shit\ASD 2\Lab 5\obj\Debug\net10.0\Lab5.AssemblyInfoInputs.cache
+E:\All shit\ASD 2\Lab 5\obj\Debug\net10.0\Lab5.AssemblyInfo.cs
+E:\All shit\ASD 2\Lab 5\obj\Debug\net10.0\Lab5.csproj.CoreCompileInputs.cache
+E:\All shit\ASD 2\Lab 5\obj\Debug\net10.0\Lab5.sourcelink.json

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\logs\\telemetry\\All shit\\ASD 2\\Lab 1\\Lab1.csproj",
+      "projectUniqueName": "E:\\All shit\\ASD 2\\Lab 1\\Lab1.csproj",
       "projectName": "Lab1",
-      "projectPath": "E:\\logs\\telemetry\\All shit\\ASD 2\\Lab 1\\Lab1.csproj",
+      "projectPath": "E:\\All shit\\ASD 2\\Lab 1\\Lab1.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\logs\\telemetry\\All shit\\ASD 2\\Lab 1\\obj\\",
+      "outputPath": "E:\\All shit\\ASD 2\\Lab 1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"

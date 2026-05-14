@@ -93,7 +93,7 @@ public List<string> GetPathsOfLength2()
             for (int k = 0; k < _graph.n ; k++)
             {
                 if (_graph.AdjMatrixDir![i, k] == 1 && _graph.AdjMatrixDir![k, j] == 1)
-                    paths.Add($"{i+1} – {k+1} – {j+1}");
+                    paths.Add($"{i+1} - {k+1} - {j+1}");
             }
     
     return paths;
